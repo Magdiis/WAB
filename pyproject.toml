@@ -12,3 +12,9 @@ dependencies = [
 requires-python = ">=3.11"
 readme = "README.md"
 license = {text = "MIT"}
+
+[tool.pdm.cripts]
+dev = "uvicorn main:app --reload"
+test = "pytest"
+[tool.pdm.dev-dependencies]
+
